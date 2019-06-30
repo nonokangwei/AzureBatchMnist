@@ -20,18 +20,16 @@
 # for the Batch and Storage client objects.
 
 _BATCH_ACCOUNT_NAME ='batchgpu'
-_BATCH_ACCOUNT_KEY = 's+9rsHm/wRCSvS744dyo3R00yXWfHzc/NOkTus8x+z6AgUVUdspZTZaR+XljZWIDw5Z12qNDFtA5FXAhqi4ToQ=='
-_BATCH_ACCOUNT_URL = 'https://batchgpu.westus2.batch.azure.com'
-_STORAGE_ACCOUNT_NAME = 'mnistdemo'
-_STORAGE_ACCOUNT_KEY = 'unCUtY3w76Z4amFuYnJYybR9pf/0/GnfrjOG+pyunEDUhRy01Gs6ETYPXNsR1P3tCrrMefvbVHwLmDQOeQNuPA=='
-_POOL_ID = 'GPUDEMOPOOL'
-_DEDICATED_POOL_NODE_COUNT = 0
-_LOW_PRIORITY_POOL_NODE_COUNT = 1
-_POOL_VM_SIZE = 'Standard_NC6'
-_JOB_ID = 'MnistTrainJob'
-_IMAGE_ID = "/subscriptions/c04b3c63-8dfe-4f98-be18-e71ff67a1f4e/resourceGroups/mnist/providers/Microsoft.Compute/images/gpuimage-image"
-_MAX_TASKS_PER_NODE = 1
-_OUTPUT_FILE_PREFIX = "mnisttrain1"
-_CLIENT_ID = '1f9e5432-77d0-42c4-88da-f8d6a8516291'
-_TENANT_ID = '72f988bf-86f1-41af-91ab-2d7cd011db47'
-_SP_SECRET = 'hF/jZy-c*6K8p6M6Sbi/2n5Y_2@1tbK2'
+_STORAGE_ACCOUNT_NAME = '' # Input your storage account name here
+_STORAGE_ACCOUNT_KEY = '' # Input your storage account key here
+_POOL_ID = '' # Set your batch pool name you'd like to use, example: GPUDEMOPOOL
+_DEDICATED_POOL_NODE_COUNT = 0 # Set zero here, this demo using low priority resouce
+_LOW_PRIORITY_POOL_NODE_COUNT = 1 # set one here, just using standalone node to do the demo
+_POOL_VM_SIZE = 'Standard_NC6' # NC6 with K80 GPU Card as demo node
+_JOB_ID = ''  # Set your batch job name you'd like to use, example: MnistTrainJob
+_IMAGE_ID = "" # Set your customized image resource id here
+_MAX_TASKS_PER_NODE = 1 # Set maximum task per node
+_OUTPUT_FILE_PREFIX = ""  # Set the training output file prefix name, example: mnisttrain1
+_CLIENT_ID = '' # Set your service principal client id here
+_TENANT_ID = '' # Set your tenant id here
+_SP_SECRET = '' # Set your service principal secret key here
