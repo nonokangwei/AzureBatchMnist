@@ -19,7 +19,7 @@
 # unique to your accounts. These are used when constructing connection strings
 # for the Batch and Storage client objects.
 
-_BATCH_ACCOUNT_NAME ='batchgpu'
+_BATCH_ACCOUNT_NAME =''  # Set your batch account key here
 _STORAGE_ACCOUNT_NAME = '' # Input your storage account name here
 _STORAGE_ACCOUNT_KEY = '' # Input your storage account key here
 _POOL_ID = '' # Set your batch pool name you'd like to use, example: GPUDEMOPOOL
