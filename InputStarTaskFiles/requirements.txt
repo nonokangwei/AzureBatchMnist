@@ -1,0 +1,5 @@
+tensorflow-gpu
+keras
+scipy==1.0.0
+Pillow
+flask
